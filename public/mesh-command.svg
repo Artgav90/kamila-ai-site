@@ -1,0 +1,35 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#050816"/>
+  <circle cx="296" cy="264" r="220" fill="url(#a)" fill-opacity="0.9"/>
+  <circle cx="930" cy="256" r="210" fill="url(#b)" fill-opacity="0.8"/>
+  <circle cx="614" cy="612" r="290" fill="url(#c)" fill-opacity="0.9"/>
+  <g opacity="0.32" stroke="#DDE7FF">
+    <path d="M88 162H1112"/>
+    <path d="M88 318H1112"/>
+    <path d="M88 474H1112"/>
+    <path d="M88 630H1112"/>
+    <path d="M88 786H1112"/>
+    <path d="M180 84V816"/>
+    <path d="M396 84V816"/>
+    <path d="M612 84V816"/>
+    <path d="M828 84V816"/>
+    <path d="M1044 84V816"/>
+  </g>
+  <rect x="150" y="134" width="260" height="150" rx="26" fill="#0E1835" stroke="#95B8FF" stroke-opacity="0.45"/>
+  <rect x="474" y="440" width="312" height="184" rx="28" fill="#0B122A" stroke="#E0B4FF" stroke-opacity="0.4"/>
+  <rect x="846" y="184" width="188" height="120" rx="24" fill="#14172D" stroke="#88F2FF" stroke-opacity="0.45"/>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(296 264) rotate(90) scale(220)">
+      <stop stop-color="#8BF0FF"/>
+      <stop offset="1" stop-color="#8BF0FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 256) rotate(90) scale(210)">
+      <stop stop-color="#F4C27A"/>
+      <stop offset="1" stop-color="#F4C27A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(614 612) rotate(90) scale(290)">
+      <stop stop-color="#AE8BFF"/>
+      <stop offset="1" stop-color="#AE8BFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
