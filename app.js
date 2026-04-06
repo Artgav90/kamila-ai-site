@@ -1,94 +1,158 @@
 const products = [
   {
-    id: 'mat-g05',
-    name: '3D коврики Premium G05/G06',
+    id: 'floor-liner-g05',
+    name: 'All-weather floor liner set',
     category: 'Салон',
-    price: 69000,
-    badge: 'Best seller',
+    price: 79000,
+    badge: 'Daily essential',
     compatibility: 'X5 G05 / X6 G06',
-    description: 'Износостойкий комплект с высоким бортом для сухого и грязного сезона.',
+    description: 'Плотные демо-коврики с высоким бортом для городской грязи, песка и дождливого сезона.',
+    image:
+      'https://images.pexels.com/photos/3807329/pexels-photo-3807329.jpeg?auto=compress&cs=tinysrgb&w=1200',
   },
   {
-    id: 'ambient-kit',
-    name: 'Ambient LED kit',
+    id: 'ambient-light-kit',
+    name: 'Ambient light upgrade kit',
     category: 'Салон',
-    price: 99000,
-    badge: 'New',
+    price: 118000,
+    badge: 'Night cabin',
     compatibility: '3 / 5 / X series',
-    description: 'Мягкая интерьерная подсветка с OEM-style интеграцией.',
+    description: 'Мягкий акцентный свет в духе premium салона без визуального перебора.',
+    image:
+      'https://images.pexels.com/photos/1276567/pexels-photo-1276567.jpeg?auto=compress&cs=tinysrgb&w=1200',
   },
   {
-    id: 'mirror-caps',
-    name: 'M Performance mirror caps',
-    category: 'Экстерьер',
-    price: 84000,
-    badge: 'Carbon look',
-    compatibility: 'G20 / G30 / G42',
-    description: 'Аккуратный карбон-look апгрейд без визуального колхоза.',
-  },
-  {
-    id: 'trunk-organizer',
-    name: 'Trunk organizer premium',
+    id: 'seatback-organizer',
+    name: 'Seatback organizer duo',
     category: 'Практичность',
-    price: 42000,
-    badge: 'KZ road ready',
-    compatibility: 'X3 / X5 / X7',
-    description: 'Органайзер для инструмента, химии, зарядок и мелочей в багажнике.',
+    price: 36000,
+    badge: 'Family ready',
+    compatibility: 'Большинство BMW SUV',
+    description: 'Два аккуратных органайзера для зарядок, документов, бутылки и travel-мелочей.',
+    image:
+      'https://images.pexels.com/photos/7567537/pexels-photo-7567537.jpeg?auto=compress&cs=tinysrgb&w=1200',
   },
   {
-    id: 'carplay-adapter',
+    id: 'mirror-cap-set',
+    name: 'Mirror cap performance set',
+    category: 'Экстерьер',
+    price: 92000,
+    badge: 'Sport look',
+    compatibility: 'G20 / G30 / G42',
+    description: 'Строгий performance-акцент для внешки без дешёвого тюнинг-шума.',
+    image:
+      'https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  },
+  {
+    id: 'wireless-carplay',
     name: 'Wireless CarPlay adapter',
     category: 'Tech',
-    price: 59000,
+    price: 64000,
     badge: 'Plug & play',
     compatibility: 'NBT EVO / ID6 / ID7',
-    description: 'Переход на беспроводной CarPlay без сложной установки.',
+    description: 'Быстрый переход на беспроводной сценарий без лишнего визуального мусора в салоне.',
+    image:
+      'https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1200',
   },
   {
-    id: 'winter-pack',
-    name: 'Winter protection pack',
-    category: 'Защита',
-    price: 129000,
-    badge: 'Seasonal',
-    compatibility: 'BMW F / G platform',
-    description: 'Защита порогов, антигрязевой набор и премиальная химия для зимы.',
-  },
-  {
-    id: 'dash-cam',
-    name: 'Dash cam discreet OEM',
+    id: 'dash-cam-pro',
+    name: 'Discreet dash cam pro',
     category: 'Tech',
-    price: 109000,
+    price: 129000,
     badge: 'Safety',
-    compatibility: 'Большинство BMW 2017+',
-    description: 'Скрытая установка и запись поездок в фирменной эстетике интерьера.',
+    compatibility: 'BMW 2018+',
+    description: 'Скрытая демо-камера в стиле OEM setup для водителей, которые любят всё clean.',
+    image:
+      'https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1200',
   },
   {
-    id: 'urban-bundle',
-    name: 'Urban Carbon Pack',
+    id: 'trunk-storage-kit',
+    name: 'Trunk storage kit',
+    category: 'Практичность',
+    price: 47000,
+    badge: 'Road trip',
+    compatibility: 'X3 / X5 / X7',
+    description: 'Складные секции и ремни фиксации для багажника, чтобы ничего не каталось по салону.',
+    image:
+      'https://images.pexels.com/photos/248747/pexels-photo-248747.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  },
+  {
+    id: 'paint-protection-pack',
+    name: 'Paint protection care pack',
+    category: 'Защита',
+    price: 54000,
+    badge: 'Care',
+    compatibility: 'BMW F / G platform',
+    description: 'Демо-набор для ухода за лаком, стеклом и чёрным глянцем в премиальной подаче.',
+    image:
+      'https://images.pexels.com/photos/6873088/pexels-photo-6873088.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  },
+  {
+    id: 'performance-pedal-set',
+    name: 'Performance pedal set',
+    category: 'Салон',
+    price: 58000,
+    badge: 'Driver feel',
+    compatibility: 'G-series automatic',
+    description: 'Металлический акцент для водительской зоны, который реально добавляет премиальный штрих.',
+    image:
+      'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  },
+  {
+    id: 'winter-guard-bundle',
+    name: 'Winter guard bundle',
+    category: 'Защита',
+    price: 143000,
+    badge: 'KZ season',
+    compatibility: 'Sedan / SUV BMW',
+    description: 'Комбо для холодного и грязного сезона: коврики, защита порога и набор ухода.',
+    image:
+      'https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  },
+  {
+    id: 'charging-console-tray',
+    name: 'Charging console tray',
+    category: 'Tech',
+    price: 41000,
+    badge: 'Clean desk',
+    compatibility: 'G20 / G30 / X5',
+    description: 'Организация центральной консоли: кабели, смартфон и ключи лежат как надо.',
+    image:
+      'https://images.pexels.com/photos/8424036/pexels-photo-8424036.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  },
+  {
+    id: 'night-drive-essentials',
+    name: 'Night Drive Essentials',
     category: 'Комплекты',
-    price: 189000,
+    price: 214000,
     badge: 'Bundle',
     compatibility: 'G-series',
-    description: 'Готовый набор для заметного, но взрослого апгрейда BMW.',
+    description: 'Собранный demo-набор из floor liners, storage kit, dash cam и console tray.',
+    image:
+      'https://images.pexels.com/photos/3807329/pexels-photo-3807329.jpeg?auto=compress&cs=tinysrgb&w=1200',
   },
 ];
 
 const faqs = [
   {
-    q: 'Это реальные товары или просто заглушка?',
-    a: 'Это фронтенд-MVP с правдоподобным каталогом и UI под реальный магазин. Backend, оплата и интеграции можно подключить следующим этапом без переделки визуальной логики.',
+    q: 'Это официальный магазин BMW?',
+    a: 'Нет. Это независимый demo-концепт storefront для аксессуаров BMW-fit. Он не притворяется официальным store и не использует ворованные marketplace-фото.',
   },
   {
-    q: 'Можно ли добавить подбор по VIN?',
-    a: 'Да. Под это уже подходит sales chat и форма checkout/comment. Дальше логично подключить CRM, лиды и форму совместимости.',
+    q: 'Какие изображения использованы на сайте?',
+    a: 'Только safe-demo подход: удалённые royalty-free / stock-like изображения из открытых permissive источников для automotive mood, без копирования карточек с маркетплейсов.',
   },
   {
-    q: 'Как считается доставка по Казахстану?',
-    a: 'Сейчас это UI-концепт. На следующем этапе можно интегрировать таблицы тарифов, API логистики и динамический расчет по городу/весу.',
+    q: 'Цены реальные?',
+    a: 'Нет, это ориентировочные demo-цены в KZT для MVP-подачи. Они нужны, чтобы каталог и корзина выглядели правдоподобно при тесте оффера.',
   },
   {
-    q: 'Есть ли личный кабинет и CRM?',
-    a: 'Да, в MVP уже есть визуальные блоки кабинета клиента и admin/CRM-концепта, чтобы продукт выглядел как готовая система, а не как “документ с хотелками”.',
+    q: 'Можно ли превратить это в рабочий магазин?',
+    a: 'Да. Следующий шаг — подключить CMS или backend, реальную корзину, оплату, тарифы доставки и CRM-обработку заявок.',
+  },
+  {
+    q: 'Зачем здесь FAQ, CTA и checkout, если это demo?',
+    a: 'Чтобы MVP выглядел как почти готовый storefront: это ускоряет проверку спроса, UX и рекламных гипотез без долгой сборки полноценной e-commerce платформы.',
   },
 ];
 
@@ -135,7 +199,7 @@ function renderProducts() {
     .map(
       (product) => `
         <article class="glass-card product-card">
-          <div class="product-media" data-badge="${product.badge}"></div>
+          <div class="product-media" data-badge="${product.badge}" style="--product-image: url('${product.image}')"></div>
           <div>
             <p class="compatibility">${product.compatibility}</p>
             <h3>${product.name}</h3>
@@ -212,11 +276,11 @@ function renderCart() {
   checkoutSummaryNode.innerHTML += `
     <div class="summary-line">
       <span>Доставка</span>
-      <strong>от 5 000 ₸</strong>
+      <strong>от 8 000 ₸</strong>
     </div>
     <div class="summary-line">
       <span>Итого</span>
-      <strong>${formatPrice(total + 5000)}</strong>
+      <strong>${formatPrice(total + 8000)}</strong>
     </div>
   `;
 }
@@ -235,10 +299,6 @@ function openDrawer(name) {
 
 function closeDrawers() {
   Object.values(drawers).forEach((drawer) => drawer.classList.remove('open'));
-}
-
-function toggleChat(forceOpen = false) {
-  chatPanel.classList.toggle('hidden', forceOpen ? false : !chatPanel.classList.contains('hidden'));
 }
 
 document.addEventListener('click', (event) => {
@@ -263,7 +323,7 @@ document.addEventListener('click', (event) => {
   }
 
   if (bundleButton) {
-    addToCart('urban-bundle');
+    addToCart('night-drive-essentials');
     openDrawer('cart');
   }
 

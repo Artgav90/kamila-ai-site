@@ -1,32 +1,35 @@
-# BMW Accessories KZ — Frontend MVP
+# BMW Accessories KZ Demo — Frontend MVP
 
-Фронтенд-MVP интернет-магазина автоаксессуаров BMW по Казахстану.
+Независимый frontend-MVP / demo storefront для аксессуаров BMW-fit по Казахстану.
 
-## Что внутри
+## Что обновлено
 
-- современный premium automotive UI
-- hero / CTA / преимущества
-- каталог товаров с фильтрами
-- карточки товаров и добавление в корзину
+- premium hero с legal demo-подачей и disclaimer
+- demo-каталог из 12 товаров с ориентировочными ценами в KZT
+- карточки товаров с удалёнными safe-demo изображениями
+- обновлённые преимущества, FAQ и CTA
 - корзина и checkout drawer UI
-- блок доставки по Казахстану
-- FAQ
-- блок профиля клиента UI
-- CRM / admin concept UI
-- sales chat widget UI
-- без backend, но структура готова под следующую интеграцию
+- premium automotive стиль без притворства официальным BMW store
+
+## Подход к изображениям
+
+На сайте используются **только safe-demo remote visuals**:
+
+- royalty-free / stock-like automotive images
+- удалённые URL из свободных/пермиссивных photo-stock источников
+- без marketplace rip'ов, водяных знаков и без копирования чужих карточек товаров
+
+Важно: это **demo storefront**, а не официальный магазин BMW и не обещание реального наличия SKU.
 
 ## Стек
-
-Максимально простой стек без лишней тяжести:
 
 - `index.html`
 - `styles.css`
 - `app.js`
 
-Это статический SPA-like MVP на чистом HTML/CSS/JS.
+Это статический MVP на чистом HTML/CSS/JS.
 
-## Запуск
+## Локальный запуск
 
 ### Вариант 1: Python
 
@@ -34,7 +37,7 @@
 python3 -m http.server 8080
 ```
 
-Открой:
+Открыть:
 
 ```text
 http://localhost:8080
@@ -42,23 +45,20 @@ http://localhost:8080
 
 ### Вариант 2: Node
 
-Если хочется через Node:
-
 ```bash
 npx serve .
 ```
 
 ## Структура
 
-- `index.html` — разметка всех секций и UI drawer/widget блоков
-- `styles.css` — визуальный стиль и адаптивность
-- `app.js` — каталог, фильтры, FAQ, корзина, drawer-логика
+- `index.html` — секции страницы, drawers, CTA и legal demo copy
+- `styles.css` — premium automotive UI, сетка и responsive
+- `app.js` — demo-каталог, фильтры, FAQ, корзина и drawer-логика
 
-## Дальше можно подключить
+## Следующий шаг, если превращать в real project
 
-- CMS / headless backend
-- реальную корзину и checkout API
-- оплату Kaspi / card acquiring
-- расчет доставки по городу и весу
-- авторизацию клиента
-- CRM-интеграцию и лиды из чата
+- подключить CMS / backend
+- завести реальные SKU и совместимость по кузовам
+- добавить оплату и расчёт доставки
+- подключить CRM / лиды / аналитику
+- заменить demo-цены на реальные
