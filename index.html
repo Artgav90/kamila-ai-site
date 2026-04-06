@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW Accessories KZ — Premium автоаксессуары по Казахстану</title>
+    <meta
+      name="description"
+      content="Премиальные BMW аксессуары с доставкой по Казахстану: салон, экстерьер, защита, подарочные наборы и быстрый checkout UI для MVP магазина."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">
+          <span class="brand-mark">M</span>
+          <div>
+            <strong>BMW Accessories KZ</strong>
+            <small>Premium fit for Kazakhstan roads</small>
+          </div>
+        </a>
+
+        <nav class="nav">
+          <a href="#catalog">Каталог</a>
+          <a href="#delivery">Доставка</a>
+          <a href="#faq">FAQ</a>
+          <a href="#account">Профиль</a>
+          <a href="#admin">CRM</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <button class="ghost-button" data-open="account">Войти</button>
+          <button class="primary-button cart-button" data-open="cart">
+            Корзина <span id="cart-count">0</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <span class="eyebrow">BMW lifestyle / KZ delivery / MVP storefront</span>
+            <h1>Аксессуары BMW, которые выглядят как OEM и переживают казахстанские дороги.</h1>
+            <p>
+              Быстрый MVP интернет-магазина для продажи автоаксессуаров BMW по всему Казахстану:
+              Алматы, Астана, Шымкент, Караганда, Атырау и дальше. Без перегруза, но уже с готовым
+              UI под каталог, корзину, клиентский кабинет, CRM и чат продаж.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#catalog">Смотреть каталог</a>
+              <button class="ghost-button" data-open="checkout">Быстрый checkout</button>
+            </div>
+            <div class="hero-metrics">
+              <article>
+                <strong>48h</strong>
+                <span>средняя отгрузка по крупным городам</span>
+              </article>
+              <article>
+                <strong>120+</strong>
+                <span>SKU для X, M, 3/5/7 series и SUV-линейки</span>
+              </article>
+              <article>
+                <strong>4.9/5</strong>
+                <span>оценка сервиса у early customers</span>
+              </article>
+            </div>
+          </div>
+          <div class="hero-panel glass-card">
+            <div class="hero-panel-top">
+              <span>Featured setup</span>
+              <span>BMW G-Series</span>
+            </div>
+            <h3>Urban Carbon Pack</h3>
+            <p>
+              Карбоновые накладки, премиальные коврики, органайзер багажника и ambient LED kit —
+              готовый комплект для владельцев BMW, которые не любят компромиссы.
+            </p>
+            <ul class="feature-bullets">
+              <li>OEM-style fitment</li>
+              <li>Адаптация под климат KZ</li>
+              <li>Поддержка WhatsApp/Telegram sales</li>
+            </ul>
+            <div class="hero-price-row">
+              <div>
+                <small>Комплект от</small>
+                <strong>189 000 ₸</strong>
+              </div>
+              <button class="primary-button" data-add-bundle="urban">Добавить комплект</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip">
+          <span>BMW F / G / X / M</span>
+          <span>Доставка по Казахстану</span>
+          <span>Подбор по VIN / кузову</span>
+          <span>Установка через партнеров</span>
+        </section>
+
+        <section class="section" id="catalog">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Каталог</span>
+              <h2>Хиты для салона, экстерьера и дороги</h2>
+            </div>
+            <div class="catalog-filters" id="filters"></div>
+          </div>
+          <div class="product-grid" id="product-grid"></div>
+        </section>
+
+        <section class="section split-section" id="advantages">
+          <div>
+            <span class="eyebrow">Почему у нас покупают</span>
+            <h2>Премиальный UX без клоунады и дешевых обещаний</h2>
+            <div class="advantage-list">
+              <article class="glass-card">
+                <strong>Подбор под модель</strong>
+                <p>Учитываем кузов, поколение и интерьерный пакет, чтобы не продавать “примерно подходящее”.</p>
+              </article>
+              <article class="glass-card">
+                <strong>Контроль комплектации</strong>
+                <p>Для популярных SKU сразу показываем совместимость с X5, X6, 3 Series, 5 Series, M-серией.</p>
+              </article>
+              <article class="glass-card">
+                <strong>Нормальная коммуникация</strong>
+                <p>Есть sales chat, быстрый checkout и понятный статус заказа — без “мы вам перезвоним когда-нибудь”.</p>
+              </article>
+            </div>
+          </div>
+          <aside class="glass-card stats-card">
+            <h3>Что уже заложено в MVP</h3>
+            <ul>
+              <li>SPA-поведение без backend</li>
+              <li>Каталог и фильтрация</li>
+              <li>Корзина / checkout drawer</li>
+              <li>Личный кабинет UI</li>
+              <li>CRM / admin overview UI</li>
+              <li>Chat sales widget</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="section split-section" id="delivery">
+          <div class="glass-card delivery-card">
+            <span class="eyebrow">Доставка по Казахстану</span>
+            <h2>Отправляем быстро, считаем честно, упаковываем как взрослые.</h2>
+            <div class="delivery-grid">
+              <article>
+                <strong>Алматы / Астана</strong>
+                <p>Курьер или экспресс-доставка 1–2 дня для популярных позиций со склада-партнера.</p>
+              </article>
+              <article>
+                <strong>Шымкент / Караганда / Актобе</strong>
+                <p>2–4 дня через надежные логистические каналы с трекингом в личном кабинете.</p>
+              </article>
+              <article>
+                <strong>Регионы</strong>
+                <p>4–7 дней. Для крупногабарита заранее показываем доплату и упаковочный класс.</p>
+              </article>
+              <article>
+                <strong>Самовывоз / установка</strong>
+                <p>Можно зарезервировать товар и передать партнерскому установщику в городе клиента.</p>
+              </article>
+            </div>
+          </div>
+          <div class="glass-card cta-card">
+            <span class="eyebrow">CTA</span>
+            <h3>Нужна подборка под конкретную BMW?</h3>
+            <p>Оставь модель, год и город — менеджер подберет аксессуары под твой кузов и бюджет.</p>
+            <button class="primary-button" data-open="chat">Открыть sales chat</button>
+          </div>
+        </section>
+
+        <section class="section faq-section" id="faq">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">FAQ</span>
+              <h2>Частые вопросы</h2>
+            </div>
+          </div>
+          <div class="faq-list" id="faq-list"></div>
+        </section>
+
+        <section class="section dashboard-section" id="account">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Профиль клиента</span>
+              <h2>Личный кабинет уже продуман</h2>
+            </div>
+          </div>
+          <div class="dashboard-grid">
+            <article class="glass-card">
+              <h3>Профиль</h3>
+              <p><strong>Артем BMW X5 G05</strong></p>
+              <p>Город: Алматы</p>
+              <p>Уведомления: Telegram + WhatsApp</p>
+              <p>Любимые категории: салон, защита, premium kits</p>
+            </article>
+            <article class="glass-card">
+              <h3>Мои заказы</h3>
+              <ul class="mini-list">
+                <li>#KZ-24018 — В пути в Алматы</li>
+                <li>#KZ-24003 — Доставлен, ожидает отзыв</li>
+                <li>#KZ-23991 — Резерв под установку</li>
+              </ul>
+            </article>
+            <article class="glass-card">
+              <h3>Wishlist</h3>
+              <ul class="mini-list">
+                <li>Ambient LED kit</li>
+                <li>Накладки M Performance</li>
+                <li>Беспроводной CarPlay adapter</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section dashboard-section" id="admin">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">CRM / Admin concept</span>
+              <h2>UI для команды продаж и операционки</h2>
+            </div>
+          </div>
+          <div class="admin-grid">
+            <article class="glass-card admin-wide">
+              <h3>Pipeline заказов</h3>
+              <div class="pipeline">
+                <div><span>Новые лиды</span><strong>18</strong></div>
+                <div><span>Счёт отправлен</span><strong>9</strong></div>
+                <div><span>Оплачено</span><strong>6</strong></div>
+                <div><span>В доставке</span><strong>14</strong></div>
+              </div>
+            </article>
+            <article class="glass-card">
+              <h3>Top SKU</h3>
+              <ul class="mini-list">
+                <li>3D коврики G05/G06</li>
+                <li>M Performance mirror caps</li>
+                <li>Trunk organizer premium</li>
+              </ul>
+            </article>
+            <article class="glass-card">
+              <h3>Задачи менеджера</h3>
+              <ul class="mini-list">
+                <li>Подтвердить оплату 4 заказов</li>
+                <li>Ответить на 7 запросов по VIN</li>
+                <li>Согласовать доставку в Атырау</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="drawer" id="cart-drawer">
+      <div class="drawer-panel">
+        <div class="drawer-head">
+          <h3>Корзина</h3>
+          <button class="icon-button" data-close>&times;</button>
+        </div>
+        <div id="cart-items" class="drawer-content"></div>
+        <div class="drawer-footer">
+          <div>
+            <small>Итого</small>
+            <strong id="cart-total">0 ₸</strong>
+          </div>
+          <button class="primary-button" data-open="checkout">К checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer" id="checkout-drawer">
+      <div class="drawer-panel large">
+        <div class="drawer-head">
+          <h3>Checkout UI</h3>
+          <button class="icon-button" data-close>&times;</button>
+        </div>
+        <div class="checkout-layout">
+          <form class="glass-card checkout-form">
+            <label>
+              Имя
+              <input type="text" placeholder="Артем" />
+            </label>
+            <label>
+              Телефон
+              <input type="tel" placeholder="+7 700 000 00 00" />
+            </label>
+            <label>
+              Город
+              <select>
+                <option>Алматы</option>
+                <option>Астана</option>
+                <option>Шымкент</option>
+                <option>Караганда</option>
+              </select>
+            </label>
+            <label>
+              Комментарий к заказу
+              <textarea placeholder="Нужна установка / подбор по VIN"></textarea>
+            </label>
+            <div class="checkout-options">
+              <div>
+                <strong>Оплата</strong>
+                <p>Kaspi / счёт / перевод — заглушка UI под будущую интеграцию.</p>
+              </div>
+              <div>
+                <strong>Доставка</strong>
+                <p>Курьер / CDEK / самовывоз / установочный партнёр.</p>
+              </div>
+            </div>
+            <button type="button" class="primary-button wide">Подтвердить заказ</button>
+          </form>
+          <aside class="glass-card summary-card">
+            <h4>Итог заказа</h4>
+            <div id="checkout-summary"></div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer" id="account-drawer">
+      <div class="drawer-panel">
+        <div class="drawer-head">
+          <h3>Вход / Профиль</h3>
+          <button class="icon-button" data-close>&times;</button>
+        </div>
+        <div class="glass-card auth-card">
+          <label>
+            Email / телефон
+            <input type="text" placeholder="artem@bmw.kz" />
+          </label>
+          <label>
+            Пароль / код
+            <input type="password" placeholder="••••••••" />
+          </label>
+          <button class="primary-button wide">Войти</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-widget" id="chat-widget">
+      <button class="chat-toggle" data-open="chat">Sales chat</button>
+      <div class="chat-panel hidden" id="chat-panel">
+        <div class="chat-head">
+          <div>
+            <strong>BMW Sales KZ</strong>
+            <small>обычно отвечаем за 7 минут</small>
+          </div>
+          <button class="icon-button" data-chat-close>&times;</button>
+        </div>
+        <div class="chat-body">
+          <div class="message incoming">Привет. Подскажем по модели BMW, совместимости и доставке по Казахстану.</div>
+          <div class="message outgoing">Нужны коврики и органайзер для X5 G05 в Алматы.</div>
+          <div class="message incoming">База. Скину 3 лучших комплекта и рассчитаю доставку.</div>
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Напиши модель, кузов или VIN" />
+          <button class="primary-button">Отправить</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
