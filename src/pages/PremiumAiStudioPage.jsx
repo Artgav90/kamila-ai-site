@@ -1,226 +1,290 @@
-const serviceCards = [
-  {
-    title: "AI-отдел продаж",
-    text: "Автоматизируем воронку: лиды, скрипты, CRM, follow-up и аналитику в одном контуре.",
-  },
-  {
-    title: "Операции без рутины",
-    text: "Убираем ручные процессы в финансах, поддержке, логистике и бэк-офисе без боли для команды.",
-  },
-  {
-    title: "Корпоративные AI-ассистенты",
-    text: "Создаём брендированных ассистентов, которые знают ваши документы, регламенты и KPI.",
-  },
+const manifestoLines = [
+  "AI STUDIO",
+  "ДЛЯ БИЗНЕСА,",
+  "КОТОРЫЙ НЕ ХОЧЕТ",
+  "ЖИТЬ ВЧЕРА.",
 ];
 
-const metrics = [
-  { value: "x3", label: "ускорение обработки лидов" },
-  { value: "-62%", label: "ручной рутины в операциях" },
-  { value: "14 дней", label: "до первого продакшн-сценария" },
-  { value: "24/7", label: "поддержка автоматизаций и мониторинг" },
-];
-
-const workflow = [
+const capabilities = [
   {
     id: "01",
-    title: "Диагностика узких мест",
-    text: "Разбираем, где бизнес теряет деньги, скорость и фокус. Смотрим цепочку от заявки до удержания.",
+    title: "Cinematic launch systems",
+    text: "Собираем сайты и продуктовые поверхности, где бренд, motion и смысл работают как один режиссёрский кадр.",
   },
   {
     id: "02",
-    title: "Архитектура AI-контура",
-    text: "Проектируем сценарии, интеграции и логику принятия решений: CRM, ERP, мессенджеры, BI, базы знаний.",
+    title: "AI revenue engines",
+    text: "Строим AI-воронки, qualification flow, follow-up контуры, scoring и операторские copilot-системы без ощущения шаблона.",
   },
   {
     id: "03",
-    title: "Запуск и масштабирование",
-    text: "Выводим MVP быстро, замеряем эффект и раскатываем на новые отделы без хаоса и техдолга.",
+    title: "Operational intelligence",
+    text: "Автоматизируем внутренние процессы: support, документооборот, knowledge retrieval, triage и decision-routing.",
   },
 ];
 
-const cases = [
+const storyFrames = [
   {
-    company: "Retail / D2C",
-    result: "+38% к конверсии из входящих заявок",
-    text: "AI-квалификация лидов, персональные ответы и триггерные сценарии в Telegram, WhatsApp и CRM.",
+    index: "A1",
+    title: "Сначала мы режем шум.",
+    text: "Убираем всё, что выглядит как очередной bland no-code лендинг. Нужен не блоковый конструктор, а цифровая сцена с напряжением, воздухом и драмой.",
+    meta: "brand system / art direction / motion grammar",
   },
   {
-    company: "B2B SaaS",
-    result: "-47% времени на customer success",
-    text: "Внутренний AI-ассистент для onboarding, QBR-подготовки, базы знаний и контроля SLA.",
+    index: "A2",
+    title: "Потом собираем интеллект в кадре.",
+    text: "Каждый экран объясняет, как AI встраивается в продажи, операционку и сервис. Не набор фич. Последовательное ощущение силы.",
+    meta: "experience logic / orchestration / interaction narrative",
   },
   {
-    company: "Логистика",
-    result: "x2.4 быстрее обработка запросов",
-    text: "Автоматизация расчётов, маршрутов, статусов заказов и работы операторов в едином интерфейсе.",
+    index: "A3",
+    title: "И только потом давим цифрами.",
+    text: "Когда визуальный мир уже продал доверие, подключаем outcomes: скорость внедрения, рост conversion, падение ручной нагрузки и эффект для команды.",
+    meta: "impact proof / premium delivery / deployment rhythm",
+  },
+];
+
+const systemLayers = [
+  {
+    label: "Signal layer",
+    value: "24/7",
+    text: "AI-агенты мониторят входящие лиды, внутренние очереди и критические точки процесса без потерь в темпе.",
+  },
+  {
+    label: "Decision layer",
+    value: "11",
+    text: "Интеграционных узлов в MVP-архитектуре: CRM, knowledge base, мессенджеры, таблицы, helpdesk и внутренние панели.",
+  },
+  {
+    label: "Velocity layer",
+    value: "14d",
+    text: "От стратегии до первого рабочего контура, если бизнес готов принимать быстрые решения, а не играть в бесконечные согласования.",
+  },
+];
+
+const outcomes = [
+  {
+    sector: "D2C / retail",
+    value: "+41%",
+    title: "к конверсии из входящих обращений",
+    text: "AI-квалификация, автоответы и контекстные сценарии для менеджеров сократили потери на первом касании.",
+  },
+  {
+    sector: "Service business",
+    value: "-58%",
+    title: "ручной рутины в клиентском сервисе",
+    text: "FAQ, triage, статусные апдейты и next-step рекомендации ушли в единый AI layer.",
+  },
+  {
+    sector: "B2B ops",
+    value: "x2.7",
+    title: "быстрее запуск новых сценариев",
+    text: "После сборки базовой orchestration-системы команда перестаёт перепридумывать процесс каждый раз с нуля.",
   },
 ];
 
 function PremiumAiStudioPage() {
   return (
-    <main className="site-shell">
-      <section className="hero-section">
-        <div className="hero-video-wrap" aria-hidden="true">
-          <video
-            className="hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80"
-          >
-            <source
-              src="https://cdn.coverr.co/videos/coverr-working-with-the-digital-world-1560883448248?download=1080p"
-              type="video/mp4"
-            />
-          </video>
-          <div className="hero-video-overlay" />
-          <div className="hero-noise" />
-        </div>
+    <main className="studio-page">
+      <section className="hero-block" id="top">
+        <div className="ambient ambient-one" aria-hidden="true" />
+        <div className="ambient ambient-two" aria-hidden="true" />
+        <div className="grid-fade" aria-hidden="true" />
 
-        <header className="topbar">
-          <div className="brand-block">
-            <span className="brand-mark" />
-            <span className="brand-name">NEURON NOIR</span>
-          </div>
-          <nav className="topnav">
-            <a href="#services">Решения</a>
-            <a href="#workflow">Процесс</a>
-            <a href="#cases">Кейсы</a>
+        <header className="topbar topbar-premium">
+          <a className="brand-lockup" href="#top" aria-label="NOVA ERA home">
+            <span className="brand-pulse" />
+            <span>
+              NOVA ERA
+              <small>AI CINEMA / SYSTEMS / AUTOMATION</small>
+            </span>
+          </a>
+
+          <nav className="topnav topnav-premium">
+            <a href="#capabilities">Подход</a>
+            <a href="#story">Нарратив</a>
+            <a href="#outcomes">Результат</a>
             <a href="#contact">Контакт</a>
           </nav>
         </header>
 
-        <div className="hero-content">
-          <div className="eyebrow">AI automation studio / Москва — Дубай — remote</div>
-          <h1>
-            Премиальные AI-системы,
-            <span> которые превращают бизнес в машину скорости.</span>
-          </h1>
-          <p className="hero-copy">
-            Проектируем и запускаем AI-ассистентов, автоматизацию продаж, операционный copilot и
-            мультимодальные интерфейсы для компаний, которым уже тесно в ручном управлении.
-          </p>
-          <div className="hero-actions">
-            <a className="button-primary" href="#contact">
-              Обсудить проект
-            </a>
-            <a className="button-secondary" href="#cases">
-              Смотреть кейсы
-            </a>
+        <div className="hero-stage">
+          <div className="hero-copy-stack">
+            <div className="eyebrow eyebrow-premium">Moscow / Dubai / worldwide delivery</div>
+            <p className="hero-intro">
+              Мы проектируем AI-студии, automation-системы и цифровые experiences с ощущением
+              большого бренда — не ради декора, а ради власти над вниманием.
+            </p>
           </div>
 
-          <div className="hero-panel-grid">
-            <article className="floating-panel featured-panel">
-              <div className="panel-kicker">LIVE SYSTEM</div>
-              <h2>AI Control Room</h2>
-              <p>
-                Живой контур автоматизации: лиды, задачи, SLA, инциденты и решения модели — в одном
-                интерфейсе для команды роста.
-              </p>
-              <div className="signal-bars" aria-hidden="true">
-                <span />
-                <span />
-                <span />
-                <span />
+          <div className="hero-manifesto" aria-label="AI studio manifesto">
+            {manifestoLines.map((line) => (
+              <div key={line} className="manifesto-line">
+                {line}
               </div>
-            </article>
+            ))}
+          </div>
 
-            <article className="floating-panel stats-panel">
-              <div className="panel-kicker">MVP IMPACT</div>
-              <ul>
-                {metrics.map((metric) => (
-                  <li key={metric.label}>
-                    <strong>{metric.value}</strong>
-                    <span>{metric.label}</span>
-                  </li>
-                ))}
-              </ul>
-            </article>
+          <div className="hero-aside-panel glass-panel">
+            <div className="aside-kicker">Realtime direction</div>
+            <div className="aside-metric">97</div>
+            <p>
+              Индекс готовности к внедрению: бренд, архитектура и automation-контура синхронизированы в одном запуске.
+            </p>
+            <div className="signal-track" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
           </div>
         </div>
-      </section>
 
-      <section className="section section-intro" id="services">
-        <div className="section-heading">
-          <span className="section-label">Что мы строим</span>
-          <h2>Не просто чат-боты. Полноценные AI-контуры для роста, ops и customer experience.</h2>
-        </div>
-        <div className="service-grid">
-          {serviceCards.map((card) => (
-            <article className="service-card" key={card.title}>
-              <div className="service-card-glow" />
-              <h3>{card.title}</h3>
-              <p>{card.text}</p>
-            </article>
-          ))}
+        <div className="hero-footer-ribbon">
+          <span>AI websites</span>
+          <span>growth systems</span>
+          <span>brand experiences</span>
+          <span>automation design</span>
+          <span>операционный интеллект</span>
         </div>
       </section>
 
-      <section className="section cinematic-band">
-        <div className="band-copy">
-          <span className="section-label">Motion layer</span>
-          <h2>Визуально — премиум. Технически — прагматично. Запускаем быстро, выглядим дорого.</h2>
+      <section className="chapter chapter-capabilities" id="capabilities">
+        <div className="chapter-head split-head">
+          <div>
+            <span className="section-tag">Capabilities</span>
+            <h2>
+              Не делаем просто лендинг.
+              <br />
+              Строим контролируемое впечатление.
+            </h2>
+          </div>
           <p>
-            Для MVP мы собираем цифровой опыт с ощущением high-end продукта: видео-слои, кинематографичный
-            свет, живые панели, глубокая типографика и сценарии, которые продают ещё до первого созвона.
+            В этой версии MVP убран обычный стартаповый вайб и заменён на editorial-подачу:
+            большие плоскости, layered depth, тактильные панели, жесткая типографика и ощущение
+            дорогой постановки с AI-смыслом внутри.
           </p>
         </div>
-        <div className="band-visual">
-          <div className="orb orb-a" />
-          <div className="orb orb-b" />
-          <div className="visual-card visual-card-main">
-            <span>Realtime orchestration</span>
-            <strong>12 automation nodes</strong>
-          </div>
-          <div className="visual-card visual-card-side">
-            <span>Lead score</span>
-            <strong>94 / 100</strong>
-          </div>
-        </div>
-      </section>
 
-      <section className="section workflow-section" id="workflow">
-        <div className="section-heading narrow">
-          <span className="section-label">Как работаем</span>
-          <h2>Сначала находим деньги и bottleneck, потом автоматизируем то, что реально двигает бизнес.</h2>
-        </div>
-        <div className="workflow-grid">
-          {workflow.map((step) => (
-            <article className="workflow-card" key={step.id}>
-              <span className="workflow-id">{step.id}</span>
-              <h3>{step.title}</h3>
-              <p>{step.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section cases-section" id="cases">
-        <div className="section-heading">
-          <span className="section-label">Selected outcomes</span>
-          <h2>Сценарии, в которых AI даёт не хайп, а цифры.</h2>
-        </div>
-        <div className="cases-grid">
-          {cases.map((item) => (
-            <article className="case-card" key={item.company}>
-              <span className="case-company">{item.company}</span>
-              <h3>{item.result}</h3>
+        <div className="capability-grid">
+          {capabilities.map((item) => (
+            <article className="capability-card glass-panel" key={item.id}>
+              <span className="capability-id">{item.id}</span>
+              <h3>{item.title}</h3>
               <p>{item.text}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="section contact-section" id="contact">
-        <div className="contact-card">
-          <div>
-            <span className="section-label">Start the build</span>
-            <h2>Если нужен сайт, AI-воронка или automation-студия под ключ — мы уже мысленно собираем архитектуру.</h2>
+      <section className="chapter chapter-immersive" id="story">
+        <div className="immersive-layout">
+          <div className="immersive-sticky">
+            <span className="section-tag">Immersive narrative</span>
+            <h2>
+              Сайт ведёт себя как тизер будущей системы.
+            </h2>
+            <p>
+              Не «вот наши услуги», а разворачивающийся сценарий: сначала ощущение силы, потом
+              логика продукта, затем конкретный эффект для бизнеса.
+            </p>
+
+            <div className="orbital-scene glass-panel" aria-hidden="true">
+              <div className="orbital-ring orbital-ring-a" />
+              <div className="orbital-ring orbital-ring-b" />
+              <div className="orbital-core" />
+              <div className="orbital-card orbital-card-main">
+                <span>Automation density</span>
+                <strong>High signal / low noise</strong>
+              </div>
+              <div className="orbital-card orbital-card-side">
+                <span>Interface mood</span>
+                <strong>Cinematic / premium / alive</strong>
+              </div>
+            </div>
           </div>
-          <div className="contact-meta">
-            <a href="mailto:hello@neuronnoir.ai">hello@neuronnoir.ai</a>
-            <p>Discovery call · 30 минут · без скучных слайдов</p>
+
+          <div className="story-stack">
+            {storyFrames.map((frame) => (
+              <article className="story-card glass-panel" key={frame.index}>
+                <span className="story-index">{frame.index}</span>
+                <h3>{frame.title}</h3>
+                <p>{frame.text}</p>
+                <small>{frame.meta}</small>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="chapter chapter-system">
+        <div className="system-banner glass-panel">
+          <div className="system-banner-copy">
+            <span className="section-tag">System architecture</span>
+            <h2>
+              AI-контур должен не только работать.
+              <br />
+              Он должен ощущаться неизбежным.
+            </h2>
+          </div>
+          <div className="system-marquee" aria-hidden="true">
+            <span>strategy</span>
+            <span>interface</span>
+            <span>automation</span>
+            <span>storytelling</span>
+            <span>ai agents</span>
+            <span>ops design</span>
+          </div>
+        </div>
+
+        <div className="system-layer-grid">
+          {systemLayers.map((layer) => (
+            <article className="system-layer glass-panel" key={layer.label}>
+              <span>{layer.label}</span>
+              <strong>{layer.value}</strong>
+              <p>{layer.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="chapter chapter-outcomes" id="outcomes">
+        <div className="chapter-head chapter-head-outcomes">
+          <span className="section-tag">Selected outcomes</span>
+          <h2>Когда упаковка дорогая, а система умная — цифры подтягиваются неслучайно.</h2>
+        </div>
+
+        <div className="outcomes-grid">
+          {outcomes.map((item) => (
+            <article className="outcome-card glass-panel" key={item.sector}>
+              <span className="outcome-sector">{item.sector}</span>
+              <div className="outcome-value">{item.value}</div>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="chapter chapter-contact" id="contact">
+        <div className="contact-shell glass-panel">
+          <div className="contact-copy">
+            <span className="section-tag">Start the build</span>
+            <h2>
+              Если нужен AI-сайт, automation-студия или growth-система с премиальной подачей —
+              значит пора делать это не скучно.
+            </h2>
+          </div>
+
+          <div className="contact-actions">
+            <a className="button-primary" href="mailto:hello@novaera.ai">
+              hello@novaera.ai
+            </a>
+            <a className="button-secondary" href="#top">
+              Вернуться наверх
+            </a>
+            <p>Discovery sprint · визуальная концепция · архитектура внедрения · production-ready MVP</p>
           </div>
         </div>
       </section>
